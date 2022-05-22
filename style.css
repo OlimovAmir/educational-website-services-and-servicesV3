@@ -83,27 +83,11 @@ input[type="button"] {
     border-color: transparent;
     cursor: pointer;
 }
-.slider input[type="radio"] {
-    display: none;
-}
-.slider-controls {
-    margin-bottom: 10px;
-    text-align: center;
-  }
 
 
-  .slider-controls label {
-    display: inline-block;
-    margin: 0 3px;
-    width: 10px;
-    height: 10px;
-    border: 4px solid white;
-    border-radius: 50%;
-    background-color: #cccccc;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+
+  
+  
 
   .logo_hidden {
       display: none;
@@ -117,18 +101,9 @@ input[type="button"] {
   }
 
   
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"],
-#btn-4:checked ~ .slider-controls label[for="btn-4"],
-#btn-5:checked ~ .slider-controls label[for="btn-5"],
-#btn-6:checked ~ .slider-controls label[for="btn-6"],
-#btn-7:checked ~ .slider-controls label[for="btn-7"],
-#btn-8:checked ~ .slider-controls label[for="btn-8"],
-#btn-9:checked ~ .slider-controls label[for="btn-9"],
-#btn-10:checked ~ .slider-controls label[for="btn-10"] {
-  background-color: #666666;
-}
+
+
+
 
 @keyframes rotate {
     0% {
@@ -139,37 +114,27 @@ input[type="button"] {
     }
   }
 
-/*#btn-1:checked ~ .logo {
-    animation-name: rotate;
-    animation-duration: 2s;
-  }
-  
-  #btn-2:checked ~ .logo {
-    transform: translate(-180px);
-  }
-  
-  #btn-3:checked ~ .logos .logo {
-    transform: translate(-480px);
-  }
-  */
+ 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     .logos{
         flex-wrap: nowrap;
         overflow: scroll;
+        
               
     }
 
     .wrapper{
         margin-left: 16px;
-    }
-    .slider {
-        display: block;
+        display: none;
     }
     .footer{
         display: none;
     }
+
+   
+    
 
 }
 
@@ -178,7 +143,20 @@ input[type="button"] {
     .nav {
         display: none;
     }
+    .viewSlide {
+        display: none;
+    }
+    
+    .block-button {
+        display: none;
+    }
+    .header2 {
+        display: none;
+    }
+    
 }
+
+
 @media screen and (max-width: 768px) {
     .logo__VievSonic, .logo__sony {
         display: none;
@@ -186,4 +164,13 @@ input[type="button"] {
     .logo__apple3{
         display: none;
     }
+
+    
+}
+
+@media screen and (min-width: 321px) {
+    .viewport {
+        display: none;
+    }
+
 }
